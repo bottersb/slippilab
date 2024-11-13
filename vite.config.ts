@@ -4,7 +4,7 @@ import viteTsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   assetsInclude: [/.*zip$/, /.*ttf$/],
-  plugins: [solidPlugin(), viteTsconfigPaths()],
+  plugins: [viteTsconfigPaths(), solidPlugin()],
   resolve: {
     conditions: ["browser"],
   },
