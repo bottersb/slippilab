@@ -4,7 +4,7 @@ import { SpinnerCircle } from "~/components/common/SpinnerCircle";
 import { uploadReplay } from "~/cloudClient";
 import { cloudLibrary, currentSelectionStore } from "~/state/selectionStore";
 import { Dialog } from "~/components/common/Dialog";
-import { ShareIcon } from "~/components/common/icons";
+import { CloudUploadIcon } from "~/components/common/icons";
 import { replayStore } from "~/state/replayStore";
 
 export function UploadDialog() {
@@ -47,7 +47,7 @@ export function UploadDialog() {
     <div class="h-8">
       <Dialog onClose={() => setState("not started")}>
         <Dialog.Trigger>
-          <ShareIcon class="h-8 w-8" title="Upload and share replay" />
+          <CloudUploadIcon class="h-8 w-8" title="Upload and share replay" />
         </Dialog.Trigger>
         <Dialog.Title>
           <h2 class="text-lg">Replay Upload</h2>
