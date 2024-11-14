@@ -67,9 +67,21 @@ running a proper database of some kind.
 
 The site is a Vite app primarily using SolidJS and Tailwind.
 
+Install project dependencies:
+
+> `npm install`
+
+Bootstrap a D1 database (Cloudflare’s native serverless SQL database):
+
+> `npx wrangler d1 execute slippilab-migration --local --file=./schema.sql`
+
 Local development:
 
 > `npm run dev`
+
+Preview (local database for persistince):
+
+> `npm run preview`
 
 Build site:
 
