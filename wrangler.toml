@@ -1,3 +1,5 @@
+ compatibility_date = "2024-11-14"
+
 [[d1_databases]]
 binding = "DB"
 database_id = "034f632f-7256-47bb-b553-5c14944bf3d8"
